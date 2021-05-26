@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Kalkulator</title>
+<style>
+body{
+background-color:black;
+}
+input{
+border:2px solid orange;
+background-color:black;
+font:14px Arial, sans-serif;
+color:white;
+}
+</style>
+<meta charset="utf-8">
+<script type="text/javascript" src="C:\Users\wikto\Onedrive\Pulpit\elekcje\pai-stronajs\skrypty\kalkulator.js">
+</script>
+</head>
+<body><br><br>
+<form name="kalkulator">
+<input type="text" name="wyswietlacz" size="13">
+<br>
+<br>
+<table border="0">
+<tr>
+<input type="button" name="c" value="c" onclick="zeruj()">
+</tr>
+<tr><td>
+<input type="button" name="7" value="7" onclick="wprowadz(7)">
+<input type="button" name="8" value="8" onclick="wprowadz(8)">
+<input type="button" name="9" value="9" onclick="wprowadz(9)">
+<input type="button" name="/" value="/" onclick="dzialanie('/')">
+</td></tr><tr><td>
+<input type="button" name="4" value="4" onclick="wprowadz(4)">
+<input type="button" name="5" value="5" onclick="wprowadz(5)">
+<input type="button" name="6" value="6" onclick="wprowadz(6)">
+<input type="button" name="*" value="*" onclick="dzialanie('*')">
+</td></tr><tr><td>
+<input type="button" name="1" value="1" onclick="wprowadz(1)">
+<input type="button" name="2" value="2" onclick="wprowadz(2)">
+<input type="button" name="3" value="3" onclick="wprowadz(3)">
+<input type="button" name="-" value="-" onclick="dzialanie('-')">
+</td></tr><tr><td>
+</td></tr><tr><td>
+<input type="button" name="0" value="0" onclick="wprowadz(0)">
+<input type="button" name="=" value="=" onclick="oblicz()">
+<input type="button" name="!" value="^2" onclick="kwadrat('^2')">
+
+<input type="button" name="+" value="+" onclick="dzialanie('+')">
+</td></tr>
+</table>
+</form>
+</body>
+</html>
+</body>
+</html>

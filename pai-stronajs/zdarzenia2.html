@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+/* ogólne ------------------ */ 
+
+* {margin:0px; padding: 0px;} 
+
+body { font: 16px Verdana; line-height:1.6; background: #EDE6DE; } 
+
+#wrapper { width:90%; overflow:hidden; margin: 0 auto; } 
+
+a {color: #354458;} 
+
+  
+
+/* logo ------------ */ 
+
+#header { height:100px; background: #354458; margin: 0 0 10px 0; } 
+
+#header h1 {padding: 20px; color: #E9E0D6;} 
+
+  
+
+/* tresc ------------ */ 
+
+#content { width:75%; background: #EB7260; float:left; padding:1%; overflow:hidden; } 
+
+  
+
+/* menu ------------ */ 
+
+#menu { background: #548BC2; width:20%; float:right; padding:1%; overflow:hidden; } 
+
+#menu h5 {padding:3px 3px 15px 3px; font-size:14px;} 
+
+#menu ul li {list-style-type:none; padding:0 0 0 10px;} 
+</style>
+<script type="text/javascript">
+function sprawdzenie(){
+	
+var zdarzenie1="Cieszę się , że ta lekcja się podobała :)"
+var zdarzenie2="Przykro mi, że ta lekcja się nie podobała :("
+if (document.pytanie.odpowiedz.value=="tak") {
+alert("Wynik działania tego guzika: "+zdarzenie1);
+
+}
+else
+if (document.pytanie.odpowiedz.value=="nie")
+{
+alert("Wynik działania tego guzika: "+zdarzenie2);
+}
+
+
+
+}
+</script>
+<title>Zdarzenia w js</title>
+<meta charset="utf-8">
+</head>
+<body>
+
+<div id="header"> 
+
+<div id="logo"><h1>Zdarzenia w js</h1></div> 
+
+</div> 
+
+  
+<div id="pustka">
+
+</div>
+<p style="color:red;">tekst czerwony, oczekuje zegara na stronie</p>
+<div id="zegar">
+<script type= "text/javascript" src="C:\Users\wikto\Onedrive\Pulpit\elekcje\pai-stronajs\skrypty\zegarek.js">
+
+</script>  
+<body onload="zegarek()">
+</div>
+<div id="wrapper"> 
+
+
+
+<div id="content">
+
+<font color="black">
+Zdarzenie onclick
+<br>
+<form name="pytanie">
+<p>1.Czy podoba ci się dzisiejsza lekcja?</p>
+<input name="odpowiedz" type="text" value="Odpowiedz tak lub nie"><br>
+</font>
+</form>
+<input type="button" value="podsumowanie" onClick="sprawdzenie()"><br>
+<font color="white">
+<form name="resetowanie" onreset="alert('Pomyślnie zresetowałeś formularz')">
+<p>2.Test</p>
+<input type="radio" value="a">test<br>
+<input type="reset" value="reset"> 
+</form>
+</font>
+
+<font color="black">
+Dalej zdarzenie onselect
+<br>
+<textarea id="id" name="test" rows="4" cols="50" onselect="alert('zaznaczyłeś tekst')">
+To jest test zdarzenia onselect
+</textarea>
+<br>
+Dalej zdarzenie onchange
+<br>
+<textarea id="id2" name="test2" rows="4" cols="50" onchange="alert('zmodyfikowałeś tekst')">
+Tekst który pokazuje jak działa zdarzenie onchange
+</textarea>
+<br>
+<form name="test3" onsubmit="alert('Potwierdziłeś formularz')">
+<p>Test2</p>
+<input type="radio" value="a">test<br>
+<input type="submit" value="Submit">
+</form>
+<br>
+Zdarzenie onblur
+<br>
+<textarea id="id3" name="test3" rows="4" cols="50" onblur="alert('Przy każdym opuszczeniu pola tekstowego pojawi się ten komunikat')">
+</textarea>
+<br>
+A teraz przeciwieństwo tego zdarzenia(zdarzenie onfocus)
+<br>
+<textarea id="id3" name="test3" rows="4" cols="50" onfocus="alert('Przy każdym wejściu na pole tekstowe pojawi się ten komunikat')">
+</textarea>
+<br>
+A teraz zdarzenie onkeydown
+<br>
+<input type="text" value="" onkeydown="alert('Wcisnąłeś klawisz')">
+<br>
+A teraz zdarzenie onkeyup
+<br>
+<input type="text" value="" onkeyup="alert('Zwolniłeś klawisz')">
+<br>
+</font>
+ 
+
+
+
+</div> 
+<div id="menu"> 
+<div id="kalendarz">
+<h5>kalendarz</h5>
+<script type="text/javascript" src="C:\Users\wikto\OneDrive\Pulpit\elekcje\pai-stronajs\skrypty\kalendarz.js"> 
+
+</script> 
+</div> 
+
+<h6>Menu główne</h6> 
+
+<ul> 
+
+<li><a href="typowastrona.html">Strona główna</a></li> 
+
+<li><a href="strona1.html">Quiz o js</a></li> 
+
+<li><a href="petle.html">Pętle</a></li> 
+
+<li><a href="indeks.html">Indeks</a></li> 
+
+<li><a href="zdarzenia2.html">Zdarzenia</a></li>
+
+</ul> 
+
+</div> 
+
+
+
+
+</div> 
+</div>
+</body>
+</html>
